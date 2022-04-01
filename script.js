@@ -3,8 +3,8 @@ const mainDisplay = document.querySelector('.mainDisplay');
 const tempResult = document.querySelector('.tempResult');
 const numbers = document.querySelectorAll('.number');
 const operations = document.querySelectorAll('.operation');
-const equal = document.querySelector('.equal');
 const clearAllValues = document.querySelector('.clear');
+const equal = document.querySelector('.equal');
 const negativeSign = document.querySelector('.negativeSign');
 const cancel = document.querySelector('.cancel');
 
@@ -16,7 +16,7 @@ let isPresenceDot = false;
 
 numbers.forEach((number) => {
   number.addEventListener('click', (e) => {
-    inputValue(e.innerText)
+    inputValue(number.innerText)
   })
 })
 
