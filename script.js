@@ -16,7 +16,7 @@ let isPresenceDot = false;
 
 numbers.forEach((number) => {
   number.addEventListener('click', (e) => {
-    inputValue(number.innerText)
+    inputValue(e.innerText)
   })
 })
 
@@ -106,7 +106,7 @@ cancel.addEventListener('click', cancelValue);
 function cancelValue() {
   if (mainDisplay.innerText) {
     mainDisplay.innerText = mainDisplay.innerText.slice(0, -1);
-    secondDisplay = ''
+    secondDisplay = '';
   }
 }
 
